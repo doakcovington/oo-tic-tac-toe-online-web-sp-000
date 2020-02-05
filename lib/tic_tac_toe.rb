@@ -32,7 +32,11 @@ class TicTacToe
   end
 
   def position_taken?(index)
-
+    taken? = false
+    if @board[index] == " " || board[index] == "" || board[index] == nil
+      puts "Sorru, that position is taken"
+      taken = true
+    end
   end
 
 end
