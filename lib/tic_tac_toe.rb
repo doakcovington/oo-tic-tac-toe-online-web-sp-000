@@ -40,7 +40,7 @@ class TicTacToe
     end
   end
 
-  def valid_move?
+  def valid_move?(index)
 
   end
 
