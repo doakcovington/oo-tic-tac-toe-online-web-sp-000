@@ -123,6 +123,8 @@ class TicTacToe
     result = nil
     if won?
       result = @board[won?[0]]
+    end
+    result
   end
 
 end
