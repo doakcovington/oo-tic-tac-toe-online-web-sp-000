@@ -84,4 +84,15 @@ class TicTacToe
     end
   end
 
+  def won?
+    WIN_COMBINATIONS.each do |current_index|
+    win_index_1 = current_index[0]
+    win_index_2 = current_index[1]
+    win_index_3 = current_index[2]
+
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]  
+  end
+
 end
