@@ -37,6 +37,7 @@ class TicTacToe
       puts "Sorry, that position is taken"
       taken = true
     end
+    taken
   end
 
 end
