@@ -54,6 +54,7 @@ class TicTacToe
       if token == "X" || token == "O"
         count += 1
       end
+    end
     count
   end
 
