@@ -89,7 +89,7 @@ class TicTacToe
       if @board[combo[0]] == "X" && @board[combo[1]] == "O" && @board[combo[3]] == "X"
         return combo
       elsif [combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[3]] == "O"
-        
+
       end
     end
   end
