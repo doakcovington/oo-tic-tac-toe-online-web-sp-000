@@ -85,14 +85,26 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.detect do |combo|
-      if @board[combo[0]] == "X" && @board[combo[1]] == "O" && @board[combo[3]] == "X"
-        return combo
-      elsif [combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[3]] == "O"
-        return combo
+    WIN_COMBINATIONS.each do |current_index|
+      win_index_1 = current_index[0]
+      win_index_2 = current_index[1]
+      win_index_3 = current_index[2]
+
+      position_1 = @board[win_index_1]
+      position_2 = @board[win_index_2]
+      position_3 = @board[win_index_3]
+
+      #If all three elements within the winning combination are "X"
+      if position_1 == "X" &&  position_2 == "X" &&  position_3 == "X"
+        #return "X"
+        return current_index
+      #else if all three elements within the winning combination are "O"
+      elsif position_1 == "O" &&  position_2 == "O" &&  position_3 == "O"
+        #return "O"
+        return current_index
       end
-      return false
     end
+    return false
   end
 
   def full?
