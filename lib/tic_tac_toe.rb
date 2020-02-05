@@ -104,7 +104,7 @@ class TicTacToe
     current_index
     end
   end
-return false
+  false
   end
 
 end
