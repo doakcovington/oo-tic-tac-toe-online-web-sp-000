@@ -44,8 +44,6 @@ class TicTacToe
     valid = false
     if index.between?(0,8) && position_taken?(index) == false
       valid = true
-    #else
-      #valid = false
     end
     valid
   end
