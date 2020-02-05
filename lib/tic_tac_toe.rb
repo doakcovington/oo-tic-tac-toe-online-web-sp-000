@@ -60,7 +60,7 @@ class TicTacToe
 
   def current_player
     player = nil
-    if @count % 2 == 0
+    if turn_count % 2 == 0
       player == "X"
     else
       player == "O"
