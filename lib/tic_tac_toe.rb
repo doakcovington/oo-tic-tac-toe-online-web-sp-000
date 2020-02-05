@@ -123,6 +123,7 @@ class TicTacToe
     result = won?
     if result
       return @board[result[0]]
+    end
   end
 
   def play
