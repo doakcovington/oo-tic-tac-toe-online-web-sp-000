@@ -67,7 +67,7 @@ class TicTacToe
       #player == "O"
       "O"
     end
-    player
+    #player
   end
 
 end
