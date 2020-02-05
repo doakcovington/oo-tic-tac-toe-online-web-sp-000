@@ -36,6 +36,8 @@ class TicTacToe
     if @board[index] == " " || @board[index] == "" || @board[index] == nil
       puts "Sorry, that position is taken"
       taken = true
+    else
+      taken = false
     end
     taken
   end
